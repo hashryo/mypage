@@ -1,0 +1,234 @@
+/* 全体 */
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.container{
+  background-color: #252424;
+}
+.top{
+  height: 400px;
+  background-color: #252424;
+}
+.top-title{
+  font-size: 8em;
+  text-align: center;
+  line-height:400px;
+  color:rgb(187, 185, 185);
+}
+/* トップページ */
+/* ポートフォリオ */
+.midle{
+  background-color: #252424;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.midle-explain{
+  width: 50%;
+  background-color: #252424;
+  color: rgb(187, 185, 185); 
+}
+.midle-explain a{
+  text-decoration: none;
+}
+.midle-explain-title {
+  font-size: 4em;
+  padding-top: 30px;
+  padding-left: 20px;
+  color: rgb(187, 185, 185);
+}
+.textbox{
+  display:flex;
+  padding-top:100px;
+}
+.midle-explain-side{
+  width: 30%;
+} 
+.midle-explain-h1{
+  font-size: 2em;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.midle-explain-h2{
+  text-align: right;
+  font-size: 1em;
+  padding-top: 15px;
+  color: rgb(187, 185, 185);
+}
+.midle-explain-ul{
+  font-size: 1.5em;
+  padding-left: 20px;
+}
+.midle-explain-ul li{
+  padding-top: 20px;
+  text-align: center;
+}
+.midle-explain-main{
+  width: 70%;
+}
+.midle-image-a{
+  width:50%;
+  background-image: url("https://i.gyazo.com/669fb79ad985a81b06e98d0b51a85bd6.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position:center bottom; 
+}
+.midle-image-b{
+  width: 50%;
+  background-image: url("https://i.gyazo.com/33daa7832cded51056f052a9c6a968ee.png");
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position:center bottom; 
+}
+/* プロフィール */
+.main{
+  background-color: #252424;
+  padding-top: 50px;
+}
+.profile{
+  width: 100%;
+}
+.profile-title{
+  text-align: center;
+  font-size: 4em;
+  color:rgb(187, 185, 185);
+  padding-bottom: 60px;
+}
+.profile .fa{
+  font-size: 70px;
+  color:rgb(187, 185, 185);
+}
+.profile-main{
+  display: flex;
+  width: 730px;
+  margin: auto;
+}
+.profile img{
+  border-radius: 220px;
+}
+.profile .profile-text{
+  font-size: 20px;
+  width:400px;
+  color:rgb(187, 185, 185);
+  line-height: 1.7;
+  display: block;
+  padding-left: 100px;
+}
+.skill{
+  width: 100%;
+  position: relative;
+  padding-top: 150px;
+}
+.skill-title{
+  text-align: center;
+  font-size: 4em;
+  color:rgb(187, 185, 185);
+  padding-bottom: 30px;
+}
+.skill .fa{
+  font-size: 70px;
+  color:rgb(187, 185, 185);
+}
+.skill-main{
+  display: flex;
+  flex-flow: row wrap;
+}
+.skill-block{
+  width: 440px;
+  height: 400px;
+  background-color: rgb(187, 185, 185);
+  margin: 100px 130px;
+  border-radius: 100px;
+}
+.skill-name{
+  color: #252424;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px; 
+  padding-bottom: 10px;
+  border: solid 3px #252424;
+}
+.skill-block table{
+  border-collapse: collapse;
+  width: 100%;
+  color: #252424;
+}
+.skill-block th{
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.skill-block td{
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+/* ハンバーガーメニュー */
+#cover{
+  background: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+#menu{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  color: #fff;
+  background: #252424;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 180px;
+  min-height: 100%;
+  transition: .4s;
+}
+#menu ul{
+  padding-top:100px;
+  font-size: 30px;
+}
+#menu li{
+  padding-bottom:80px;  
+}
+#menu a{
+  text-decoration: none;
+  color: #fff;
+}
+#show, #hide {
+  float: right;
+  cursor: pointer;
+  font-size: 50px; 
+  color: white; 
+}
+.menu-open {
+  overflow-y: hidden;
+}
+body.menu-open #cover {
+  display: block;
+}
+body.menu-open #menu {
+  right: 0;
+}
+/* トップページのハンバーガーメニュー */
+.top-page #show{
+  color: #252424;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  font-size: 80px;
+}
+
