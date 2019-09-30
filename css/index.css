@@ -22,6 +22,20 @@ body{
   color:rgb(187, 185, 185);
 }
 /* トップページ */
+.top-p{
+  color:#252424;
+  position: absolute;
+  font-size: 2em;
+  top: 10%;
+  left: 38%;
+}
+.top-page #show{
+  color: #252424;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  font-size: 80px;
+}
 /* ポートフォリオ */
 .midle{
   background-color: #252424;
@@ -222,13 +236,5 @@ body.menu-open #cover {
 }
 body.menu-open #menu {
   right: 0;
-}
-/* トップページのハンバーガーメニュー */
-.top-page #show{
-  color: #252424;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  font-size: 80px;
 }
 
