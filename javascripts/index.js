@@ -5,12 +5,30 @@ document.addEventListener("DOMContentLoaded", function(){
   var ctx;
   var Ball;
   var balls = [];
-  var start = document.querySelector('.fa-play-circle');
+  var start = document.querySelector('.fa-bullseye');
+  var msg =　document.querySelector('.top-p');
+  var flag = 0;
+
+// トップメッセージ点滅
+setInterval(function(){
+  if (msg){
+    if(flag == 0){
+      msg.style.display="none";
+      flag = 1;
+    }
+    else{
+      msg.style.display="block";
+      flag = 0;
+    }
+  }
+},400);
+
 // スタートアイコン表示
   if (start){
     start.style.display="none";
     setTimeout(function(){
       start.style.display="block";
+      msg.innerHTML = "&nbsp;&nbsp;Tuch the icon";
     },8000);
   }
 // ハンバーガーメニュー
