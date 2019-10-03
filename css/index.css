@@ -8,7 +8,6 @@ body{
 }
 @media screen and (max-width:768px){
   body{
-    position: relative;
     width: 100%;
     overflow-x: hidden; 
   }
@@ -46,12 +45,28 @@ body{
   top: 10%;
   left: 30%;
 }
+@media screen and (max-width:768px){
+  .top-p{
+    font-size: 1.2em;
+  }
+}
 .top-page #show{
   color: #252424;
   position: absolute;
   right: 50%;
   top: 50%;
   font-size: 80px;
+}
+@media screen and (max-width:768px){
+  .top-page #show{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:768px){
+  #mycanvas{
+    height:670px;
+    width:500px;
+  }
 }
 /* ポートフォリオ */
 .midle{
@@ -60,10 +75,23 @@ body{
   padding-top: 150px;
   padding-bottom: 150px;
 }
+@media screen and (max-width:768px){
+  .midle{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    height: 410px;
+  }
+}
 .midle-explain{
   width: 50%;
   background-color: #252424;
   color: rgb(187, 185, 185); 
+}
+@media screen and (max-width:768px){
+  .midle-explain{
+    width: 100%;
+  }
 }
 .midle-explain a{
   text-decoration: none;
@@ -74,13 +102,31 @@ body{
   padding-left: 20px;
   color: rgb(187, 185, 185);
 }
+@media screen and (max-width:768px){
+  .midle-explain-title{
+    font-size: 1.3em;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
 .textbox{
   display:flex;
   padding-top:100px;
 }
+@media screen and (max-width:768px){
+  .textbox{
+    padding-top: 30px;
+  }
+}
 .midle-explain-side{
   width: 30%;
 } 
+@media screen and (max-width:768px){
+  .midle-explain-side{
+    width:50%;
+  }
+}
 .midle-explain-h1{
   font-size: 2em;
   padding-left: 20px;
@@ -88,22 +134,52 @@ body{
   padding-bottom: 20px;
   text-align: center;
 }
+@media screen and (max-width:768px){
+  .midle-explain-h1{
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+}
 .midle-explain-h2{
   text-align: right;
   font-size: 1em;
   padding-top: 15px;
   color: rgb(187, 185, 185);
 }
+@media screen and (max-width:768px){
+  .midle-explain-h2{
+    font-size: 10px;
+    padding-top: 8px;
+  }
+}
 .midle-explain-ul{
   font-size: 1.5em;
   padding-left: 20px;
+}
+@media screen and (max-width:768px){
+  .midle-explain-ul{
+    font-size: 10px;
+    padding-left: 15px;
+  }
 }
 .midle-explain-ul li{
   padding-top: 20px;
   text-align: center;
 }
+@media screen and (max-width:768px){
+  .midle-explain-ul{
+    padding-top: 0px;
+  }
+}
 .midle-explain-main{
   width: 70%;
+}
+@media screen and (max-width:768px){
+  .midle-explain-main{
+    width: 50%;
+  }
 }
 .midle-image-a{
   width:50%;
@@ -112,12 +188,28 @@ body{
   background-repeat: no-repeat;
   background-position:center bottom; 
 }
+@media screen and (max-width:768px){
+  .midle-image-a{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+  }
+}
 .midle-image-b{
   width: 50%;
   background-image: url("https://i.gyazo.com/33daa7832cded51056f052a9c6a968ee.png");
   background-size: contain;  
   background-repeat: no-repeat;
   background-position:center bottom; 
+}
+@media screen and (max-width:768px){
+  .midle-image-b{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 890px;
+    left: 40px;
+  }
 }
 /* プロフィール */
 .main{
