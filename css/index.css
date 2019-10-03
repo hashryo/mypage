@@ -154,6 +154,7 @@ body{
   .profile-main{
     display: block;
     width: 100%;
+    text-align: center;
   }
 }
 .profile img{
@@ -179,6 +180,8 @@ body{
     font-size: 15px;
     width:250px;
     padding-left: 0;
+    margin: auto;
+    margin-top: 50px;
   }
 }
 .skill{
@@ -186,19 +189,40 @@ body{
   position: relative;
   padding-top: 150px;
 }
+@media screen and (max-width:768px){
+  .skill{
+    padding-top: 80px;
+  }
+}
 .skill-title{
   text-align: center;
   font-size: 4em;
   color:rgb(187, 185, 185);
   padding-bottom: 30px;
 }
+@media screen and (max-width:768px){
+  .skill-title{
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+}
 .skill .fa{
   font-size: 70px;
   color:rgb(187, 185, 185);
 }
+@media screen and (max-width:768px){
+  .skill .fa{
+    font-size: 20px;
+  }
+}
 .skill-main{
   display: flex;
   flex-flow: row wrap;
+}
+@media screen and (max-width:768px){
+  .skill-main{
+    display: block;
+  }
 }
 .skill-block{
   width: 440px;
@@ -207,6 +231,16 @@ body{
   margin: 100px 130px;
   border-radius: 100px;
 }
+@media screen and (max-width:768px){
+  .skill-block{
+    display: block;
+    width: 240px;
+    height: 200px;
+    border-radius: 70px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
 .skill-name{
   color: #252424;
   font-size: 40px;
@@ -214,6 +248,13 @@ body{
   padding-top: 30px; 
   padding-bottom: 10px;
   border: solid 3px #252424;
+}
+@media screen and (max-width:768px){
+  .skill-name{
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+  }
 }
 .skill-block table{
   border-collapse: collapse;
@@ -226,10 +267,24 @@ body{
   text-align: center;
   font-weight: bold;
 }
+@media screen and (max-width:768px){
+  .skill-block th{
+    font-size: 18px;
+    padding: 5px;
+    padding-bottom: 8px;
+  }
+}
 .skill-block td{
   font-size: 20px;
   padding: 20px;
   text-align: center;
+}
+@media screen and (max-width:768px){
+  .skill-block td{
+    font-size: 15px;
+    padding: 5px;
+    padding-bottom: 8px;
+  }
 }
 /* ハンバーガーメニュー */
 #cover{
