@@ -461,6 +461,6 @@ body.menu-open #cover {
 }
 body.menu-open #menu {
   right: 0;
-  display: block;
+  display: block!important;
 }
 
