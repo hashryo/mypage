@@ -411,13 +411,13 @@ body{
   width: 180px;
   min-height: 100%;
   transition: .4s;
+  display: none;
 }
 @media screen and (max-width:768px){
   #menu{
     width: 100px;
     right: -100px;
     padding: 5px;
-    display: none;
   }
 }
 #menu ul{
@@ -461,10 +461,6 @@ body.menu-open #cover {
 }
 body.menu-open #menu {
   right: 0;
-}
-@media screen and (max-width:768px){
-  .menu-open #menu{
-    display: block;
-  }
+  display: block;
 }
 
