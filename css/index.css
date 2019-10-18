@@ -212,6 +212,22 @@ body{
     left: 40px;
   }
 }
+.midle-image-c{
+  width: 50%;
+  background-image: url("https://i.gyazo.com/247bc6dd2690de85f7d7d5fcf14c8ae6.jpg");
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position:center bottom; 
+}
+@media screen and (max-width:768px){
+  .midle-image-c{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 890px;
+    left: 40px;
+  }
+}
 /* プロフィール */
 .main{
   background-color: #252424;
