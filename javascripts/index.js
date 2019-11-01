@@ -23,14 +23,15 @@ setInterval(function(){
   }
 },400);
 
-// スタートアイコン表示
+// スタートアイコンクリック
   if (start){
     start.style.display="none";
-    setTimeout(function(){
-      start.style.display="block";
-      msg.innerHTML = "&nbsp;&nbsp;Tuch the icon";
-    },8000);
   }
+  setTimeout(function(){
+    start.dispatchEvent(new Event("click"));
+    start.style.display="block"
+  },5000)
+
 // ハンバーガーメニュー
   show.addEventListener('click', function() {
     document.body.className = 'menu-open';
