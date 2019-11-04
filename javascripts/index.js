@@ -26,12 +26,11 @@ setInterval(function(){
 // スタートアイコンクリック
   if (start){
     start.style.display="none";
-  }
   setTimeout(function(){
     start.dispatchEvent(new Event("click"));
     start.style.display="block"
   },5000)
-
+  }
 // ハンバーガーメニュー
   show.addEventListener('click', function() {
     document.body.className = 'menu-open';
