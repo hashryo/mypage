@@ -574,6 +574,55 @@ body{
     100% { transform: translateX(0px) rotate(360deg); }
   }
 }
+.third{
+  height:500px;
+}
+.step{
+  height:80px;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.step-1{
+  animation-name: anime1;
+}
+.step-2{
+  animation-name: anime2;
+}
+.step-3{
+  animation-name: anime3;
+}
+.step-4{
+  animation-name: anime4;
+}
+.step-5{
+  animation-name: anime5;
+}
+@keyframes anime1 {
+  0% {width: 0%;  background-color: aqua;}
+  50% {width: 100%; background-color: blue;}
+  100% {width: 0%;  background-color: aqua;}
+}
+@keyframes anime2 {
+  0% {width: 100%;  background-color:rgb(141, 24, 3); }
+  50% {width: 0%; background-color: rgb(255, 102, 0);}
+  100% {width: 100%;  background-color:rgb(141, 24, 3); }
+}
+@keyframes anime3 {
+  0% {width: 0%;  background-color: rgb(71, 245, 86);}
+  50% {width: 100%; background-color: rgb(1, 77, 24);}
+  100% {width: 0%;  background-color: rgb(71, 245, 86);}
+}
+@keyframes anime4 {
+  0% {width: 100%;  background-color: rgb(49, 48, 48);}
+  50% {width: 0%; background-color: rgb(149, 151, 150);}
+  100% {width: 100%;  background-color: rgb(49, 48, 48);}
+}
+@keyframes anime5 {
+  0% {width: 0%;  background-color: rgb(230, 250, 119);}
+  50% {width: 100%; background-color: rgb(234, 250, 6);}
+  100% {width: 0%;  background-color: rgb(230, 250, 119);}
+}
 /* ハンバーガーメニュー */
 #cover{
   background: #000;
