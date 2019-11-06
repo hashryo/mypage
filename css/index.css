@@ -491,6 +491,11 @@ body{
 .second{
   height: 500px;
 }
+@media screen and (min-width:768px){
+  .second{
+    height: 1300px;
+  }
+}
 .box-1{
   background: rgb(75, 1, 1);
 }
@@ -521,6 +526,13 @@ body{
   margin: auto;
   margin-bottom: 20px;
 }
+@media screen and (min-width:768px){
+  .box{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+}
 .box-odd.moved {
   animation-name: spin;
   animation-duration: 3s;
@@ -539,11 +551,28 @@ body{
   80% { transform: translateX(-150px) rotate(320deg) scale(1.8); }
   100% { transform: translateX(0px) rotate(360deg); }
 }
+
+@media screen and (min-width:768px){
+  @keyframes spin {
+    0% { transform: none; }
+    50% { transform: translateX(400px) rotate(270deg) scale(0.8); border-radius: 50%; }
+    80% { transform: translateX(-400px) rotate(320deg) scale(1.8); }
+    100% { transform: translateX(0px) rotate(360deg); }
+  }
+}
 @keyframes spin2 {
   0% { transform: none; }
-  50% { transform: translateX(-150px) rotate(270deg) scale(0.8); border-radius: 50%; }
-  80% { transform: translateX(150px) rotate(320deg) scale(1.8); }
+  50% { transform: translateX(-50px) rotate(270deg) scale(0.8); border-radius: 50%; }
+  80% { transform: translateX(50px) rotate(320deg) scale(1.8); }
   100% { transform: translateX(0px) rotate(360deg); }
+}
+@media screen and (min-width:768px){
+  @keyframes spin2 {
+    0% { transform: none; }
+    50% { transform: translateX(-150px) rotate(270deg) scale(0.8); border-radius: 50%; }
+    80% { transform: translateX(150px) rotate(320deg) scale(1.8); }
+    100% { transform: translateX(0px) rotate(360deg); }
+  }
 }
 /* ハンバーガーメニュー */
 #cover{

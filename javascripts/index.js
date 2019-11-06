@@ -108,11 +108,4 @@ setInterval(function(){
     }, 30);
   }
   update();var canvas;  
-  // デザイン
-  document.querySelector('.second').addEventListener('click', () => {
-    console.log("aaa");
-    // document.querySelectorAll('.box').forEach((box) => {
-    //   box.classList.add('moved');
-    // });
-  });
 }, false)
