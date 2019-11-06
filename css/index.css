@@ -489,27 +489,62 @@ body{
   background-color: rgb(161, 158, 158);
 }
 .second{
-  height: 400px;
+  height: 500px;
+}
+.box-1{
+  background: rgb(75, 1, 1);
+}
+.box-2{
+  background: rgb(207, 61, 36);
+}
+.box-3{
+  background: rgb(241, 245, 44);
+}
+.box-4{
+  background: rgb(4, 228, 23);
+}
+.box-5{
+  background: rgb(33, 178, 235);
+}
+.box-6{
+  background: rgb(20, 2, 173);
+}
+.box-7{
+  background: rgb(180, 3, 180);
+}
+.box-8{
+  background: rgb(201, 5, 70);
 }
 .box{
   width: 40px;
   height: 40px;
-  background: skyblue;
-  margin-bottom: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 }
-.box .moved {
+.box-odd.moved {
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.box-even.moved {
+  animation-name: spin2;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 @keyframes spin {
   0% { transform: none; }
-  50% { transform: rotate(270deg) scale(0.8); border-radius: 50%; }
-  80% { transform: rotate(320deg) scale(1.8); }
-  100% { transform: rotate(360deg); }
+  50% { transform: translateX(150px) rotate(270deg) scale(0.8); border-radius: 50%; }
+  80% { transform: translateX(-150px) rotate(320deg) scale(1.8); }
+  100% { transform: translateX(0px) rotate(360deg); }
 }
-
+@keyframes spin2 {
+  0% { transform: none; }
+  50% { transform: translateX(-150px) rotate(270deg) scale(0.8); border-radius: 50%; }
+  80% { transform: translateX(150px) rotate(320deg) scale(1.8); }
+  100% { transform: translateX(0px) rotate(360deg); }
+}
 /* ハンバーガーメニュー */
 #cover{
   background: #000;
