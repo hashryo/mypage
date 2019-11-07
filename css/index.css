@@ -413,6 +413,7 @@ body{
   display: grid;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-columns: 20% 20% 20% 20% 20%;
+  margin-bottom: 150px;
 }
 @media screen and (max-width:768px){
   .farst{
@@ -634,45 +635,116 @@ body{
   100% {width: 0%;  background-color: rgb(230, 250, 119);}
 }
 .forth{
-  height:400px;
+  height:200px;
 }
 .element{
   height:40px;
   width:40px;
   position: fixed;
-  top:100px;
+  top:1100px;
   animation-name: spin3;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+@media screen and (min-width:768px){
+  .element{
+    height:100px;
+    width:100px;
+    top:320px;
+  }
+}
 .element-1{
   left:10px;
   background: red;
+}
+@media screen and (min-width:768px){
+  .element-1{
+    left: 100px;
+  }
 }
 .element-2{
   left:60px;
   background: red;
 }
+@media screen and (min-width:768px){
+  .element-2{
+    left: 250px;
+  }
+}
 .element-3{
   left:110px;
   background: red;
+}
+@media screen and (min-width:768px){
+  .element-3{
+    left: 450px;
+  }
 }
 .element-4{
   left:160px;
   background: red;
 }
+@media screen and (min-width:768px){
+  .element-4{
+    left: 650px;
+  }
+}
 .element-5{
   left:210px;
   background: red;
+}
+@media screen and (min-width:768px){
+  .element-5{
+    left: 850px;
+  }
 }
 .element-6{
   left:260px;
   background: red;
 }
+@media screen and (min-width:768px){
+  .element-6{
+    left: 1050px;
+  }
+}
 .element-7{
   left:310px;
   background: red;
+}
+@media screen and (min-width:768px){
+  .element-7{
+    left: 1250px;
+  }
+}
+.fifth{
+  height: 1000px;
+}
+.block{
+  height: 200px;
+}
+.block-1{
+  background-image: url("../img/c1.jpg");
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+.block-2{
+  background-image: url("../img/c2.jpg");
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
+.block-3{
+  background-image: url("../img/c3.jpg");
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+.block-4{
+  font-size: 48px;
+  font-weight: bold;
+  color: orange;
+  opacity: 0;
+  position: fixed;
+
 }
 /* ハンバーガーメニュー */
 #cover{
