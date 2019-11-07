@@ -404,6 +404,9 @@ body{
   }
 }
 /* デザイン */
+.dummy{
+  height:400px;
+}
 .farst{
   height: 800px;
   width: 100%;
@@ -414,6 +417,7 @@ body{
 @media screen and (max-width:768px){
   .farst{
     height: 350px;
+    margin-bottom: 70px;
   }
 }
 .item-1 {
@@ -574,6 +578,12 @@ body{
     100% { transform: translateX(0px) rotate(360deg); }
   }
 }
+@keyframes spin3 {
+  0% { transform: none; }
+  50% { transform: rotate(270deg);  border-radius: 50%; }
+  80% { transform:  rotate(320deg); }
+  100% { transform:  rotate(360deg); }
+}
 .third{
   height:500px;
 }
@@ -622,6 +632,47 @@ body{
   0% {width: 0%;  background-color: rgb(230, 250, 119);}
   50% {width: 100%; background-color: rgb(234, 250, 6);}
   100% {width: 0%;  background-color: rgb(230, 250, 119);}
+}
+.forth{
+  height:400px;
+}
+.element{
+  height:40px;
+  width:40px;
+  position: fixed;
+  top:100px;
+  animation-name: spin3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.element-1{
+  left:10px;
+  background: red;
+}
+.element-2{
+  left:60px;
+  background: red;
+}
+.element-3{
+  left:110px;
+  background: red;
+}
+.element-4{
+  left:160px;
+  background: red;
+}
+.element-5{
+  left:210px;
+  background: red;
+}
+.element-6{
+  left:260px;
+  background: red;
+}
+.element-7{
+  left:310px;
+  background: red;
 }
 /* ハンバーガーメニュー */
 #cover{
