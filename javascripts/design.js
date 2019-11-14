@@ -65,9 +65,9 @@ class Panel {
   }
   getRandomImage() {
     const images = [
-      '../img/seven.png',
-      '../img/bell.png',
-      '../img/cherry.png',
+      '../img/sraim1.jpeg',
+      '../img/sraim2.jpeg',
+      '../img/sraim3.jpeg',
     ];
     return images[Math.floor(Math.random() * images.length)];
   }
